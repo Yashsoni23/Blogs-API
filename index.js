@@ -5,13 +5,12 @@ const cors = require("cors");
 const port = process.env.PORT || 3000;
 const App = express();
 const server = http.createServer(App);
-const hostname = 'localhost';
 const Router = express.Router();
 const app = require("./app");
 const bodyparser = require("body-parser");
 
 
-App.listen(port,hostname,(()=>{
+App.listen(port,(()=>{
     console.log(`server listen on ${port}`)
 }))
 App.use(cors);
